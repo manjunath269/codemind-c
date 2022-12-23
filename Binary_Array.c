@@ -1,18 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int n,b=0;
-    scanf("%d",&n);
-    int a[n];
-    for(int i=0;i<n;i++)
+int n,st=0;
+scanf("%d",&n);
+int a[n];
+for(int i=0;i<n;i++){
     scanf("%d",&a[i]);
-     for(int i=0;i<n;i++)
-     if(a[i]!=1 && a[i]!=0)
-     {
-         b=1;
-         break;
-     }
-if(b) printf("False");
-else 
-printf("True");
+    if(a[i]!=0 && a[i]!=1)
+    {
+        st=1;
+        break;
+    }
+}
+if(st) printf("False");
+else printf("True");
+    
 }
