@@ -1,17 +1,18 @@
-#include<stdio.h>
+#include<iostream>
+#include<iomanip>
+using namespace std;
 int main()
 {
     int a,b,c;
-    scanf("%d%d%d",&a,&b,&c);
+    cin>>a>>b>>c;
     if(a>b)
-          if(a>c)
-          printf("%d",a);
-          else
-          printf("%d",c);
-    else 
-    if(b>c)
-    printf("%d",b);
+      if(a>c)
+      cout<<a;
+      else 
+      cout<<c;
     else
-    printf("%d",c);
-    
+    if(b>c)
+    cout<<b;
+    else
+    cout<<c;
 }
